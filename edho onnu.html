@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Welcome to Noshin's website</title>
+    <style>
+        /* Optional: CSS for button styling */
+        .navbar {
+            background-color: #f1f1f1;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+    <script>
+        // JavaScript function to handle form submission
+        function formSubmitted(event) {
+            event.preventDefault(); // Prevents the default form submission action
+            alert("Form has been submitted!"); // Displays a popup message
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="https://example.com/about" target="_blank">About</a>
+        <a href="https://example.com/contact" target="_blank">Contact Us</a>
+    </div>
+
+    <form onsubmit="formSubmitted(event)">
+        <div align="center">
+            <h1>Welcome to Noshin's website</h1>
+            Enter your name:
+            <input type="text" name="UserName" size=35 maxlength=35 value="">
+            </br></br>
+            Enter your department:
+            <input type="text" name="Deptt" size=35 maxlength=35 value=""> </br> </br>
+            Tell us a little about yourself:
+            <textarea name="Comments" cols=30 rows=4></textarea> </br> </br>
+            Do you exercise at home?
+            <input type="radio" name="exe" value=1>Yes
+            <input type="radio" name="exe" value=2>No
+            </p>
+            How do you like to read about your favorite topics?
+            <p>
+            <input type="checkbox" name="Books">Books
+            <input type="checkbox" name="Web">Online resources
+            <input type="checkbox" name="Phone">Phone apps
+            <input type="checkbox" name="Magazines">Magazines
+            </p>
+            What genre of movies do you like?
+            <select name="moviepref">
+                <option value=1 selected="true">comedy</option>
+                <option value=2>romance</option>
+                <option value=3>thriller</option>
+                <option value=4>horror</option>
+                <option value=5>biopic</option>
+            </select>
+            </br></br>
+            <input type="submit" value="Submit form">
+            </p>
+            Submitted by Noshin Koorimannil 21319032
+        </div>
+    </form>
+
+</body>
+</html>
